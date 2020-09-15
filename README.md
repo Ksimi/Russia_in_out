@@ -52,3 +52,6 @@ The Mini Pie Chars dashboard menu allows a user to select the following paramete
 * Date in quarterly increments (with the date controls on the map itself)
 
 A user can also start an animated sequence of quarterly pie chart views when a “play” button on the map is clicked.
+
+**Here is the direct link to the Russian border crossings app on the shinyapp.io:**
+https://ksimi.shinyapps.io/Russia_In_Out/
