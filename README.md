@@ -1,5 +1,6 @@
 # Border crossings with Russian Federation 
-"Russia_in_out" is the Shiny app based on the dataset of the border crossings with Russia for the period of **2010 through 2019**.
+**["Russia_in_out"](
+https://ksimi.shinyapps.io/Russia_In_Out/)** is the Shiny app based on the dataset of the border crossings with Russia for the period of **2010 through 2019**.
 
 The official source of the quarterly updated data is the Border Service of the Russian Federation (see the data for [incoming](https://fedstat.ru/indicator/38479) and [outgoing](https://fedstat.ru/indicator/38479) traffic).
 
@@ -54,4 +55,5 @@ The Mini Pie Chars dashboard menu allows a user to select the following paramete
 A user can also start an animated sequence of quarterly pie chart views when a “play” button on the map is clicked.
 
 **Here is the direct link to the Russian border crossings app on the shinyapp.io:**
+
 https://ksimi.shinyapps.io/Russia_In_Out/
