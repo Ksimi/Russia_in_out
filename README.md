@@ -13,6 +13,11 @@ The app utilizes the power of the **[Shinydashboard](http://rstudio.github.io/sh
 
 _The Great Circles dashboard map based on the idea of the [great-circle distances](https://en.wikipedia.org/wiki/Great-circle_distance) and is showing the border crossings with Russia as the great-circle sections* on the World map utilizing the [Leaflet](https://leafletjs.com/) library._
 
+###### _The starting (for outgoing) or ending (for incoming) points for the great-circle sections are placed in the Russian capital, Moscow. This geographical simplification was made due to the facts that:_
+
+###### _1. No regional split of the Russian border crossings is openly available yet (as of Sep 2020). 
+###### _2. On average more than 50% of all incoming/outgoing air traffic finishes in/originates from Moscow._
+
 The Great Circles dashboard menu allows a user to select the following parameters:
 
 •	Type of border crossing (into Russia, into Russia – by population, out of Russia, crossing balance)
@@ -20,9 +25,7 @@ The Great Circles dashboard menu allows a user to select the following parameter
 •	Date in quarterly increments
 •	Map view with some pre-selected layers from the map provider list for Leaflet
 
-* The starting (for outgoing) or ending (for incoming) points for the great-circle sections are placed in the Russian capital, Moscow. This geographical simplification was made due to the facts that:
-a)	No regional split of the Russian border crossings is openly available yet (as of Sep 2020).
-b)	On average more than 50% of all incoming/outgoing air traffic finishes in/originates from Moscow
+
 The map itself is interactive on hover and shows the detailed crossing stats per country.
 The Great Circles dashboard also shows the following data:
 •	Total border crossings + line chart
