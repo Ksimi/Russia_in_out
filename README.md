@@ -11,6 +11,8 @@ The app utilizes the power of the **[Shinydashboard](http://rstudio.github.io/sh
 
 ## **Great Circles dashboard**
 
+![alt text](https://github.com/Ksimi/Russia_in_out/blob/master/data-raw/great_circle.png)
+
 _The Great Circles dashboard map based on the idea of the [great-circle distances](https://en.wikipedia.org/wiki/Great-circle_distance) and is showing the border crossings with Russia as the great-circle sections* on the World map utilizing the [Leaflet](https://leafletjs.com/) library._
 
 ###### _*The starting (for outgoing) or ending (for incoming) points for the great-circle sections are placed in the Russian capital, Moscow. This geographical simplification was made due to the facts that: a) No regional split of the Russian border crossings is openly available yet (as of Sep 2020). b) On average more than 50% of all incoming/outgoing air traffic finishes in/originates from Moscow._
@@ -35,6 +37,8 @@ The Great Circles dashboard also shows the following data:
 A user can also start an animated sequence of quarterly views when a “play” button on the date selection is clicked.
 
 ## Mini Pie Charts dashboard
+
+![alt text](https://github.com/Ksimi/Russia_in_out/blob/master/data-raw/mini-chart.png)
 
 The Mini Pie Charts dashboard is using the [leaflet.minicharts](https://cran.r-project.org/web/packages/leaflet.minicharts/vignettes/introduction.html) package for showing the pie charts with the traffic type split by country on the World map.
 
