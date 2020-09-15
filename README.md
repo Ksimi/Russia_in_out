@@ -5,9 +5,9 @@ The official source of the quarterly updated data is the Border Service of the R
 
 The dataset contains 40 quarterly observations of the border crossings with Russia with the traffic type additionally split into air, car, rail, ship and walk subsets.
 
-The app code is written in **[R]**(https://www.r-project.org/about.html) using the **[Shiny]**(https://shiny.rstudio.com/) package with some CSS fine-tuning.
+The app code is written in **[R](https://www.r-project.org/about.html)** using the **[Shiny](https://shiny.rstudio.com/)** package with some CSS fine-tuning.
 
-The app utilizes the power of the **[Shinydashboard]**(http://rstudio.github.io/shinydashboard/index.html) and is organized into two different dashboard types:
+The app utilizes the power of the **[Shinydashboard](http://rstudio.github.io/shinydashboard/index.html)** and is organized into two different dashboard types:
 
 ## **Great Circles dashboard**
 
