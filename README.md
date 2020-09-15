@@ -38,7 +38,7 @@ A user can also start an animated sequence of quarterly views when a “play” 
 
 ## Mini Pie Charts dashboard
 
-![alt text](https://github.com/Ksimi/Russia_in_out/blob/master/data-raw/mini-chart.png)
+![alt text](https://github.com/Ksimi/Russia_in_out/blob/master/data-raw/mini_chart.png)
 
 The Mini Pie Charts dashboard is using the [leaflet.minicharts](https://cran.r-project.org/web/packages/leaflet.minicharts/vignettes/introduction.html) package for showing the pie charts with the traffic type split by country on the World map.
 
