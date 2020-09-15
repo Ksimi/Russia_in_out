@@ -2,7 +2,7 @@
 **["Russia_in_out"](
 https://ksimi.shinyapps.io/Russia_In_Out/)** is the Shiny app based on the dataset of the border crossings with Russia for the period of **2010 through 2019**.
 
-The official source of the quarterly updated data is the Border Service of the Russian Federation (see the data for [incoming](https://fedstat.ru/indicator/38479) and [outgoing](https://fedstat.ru/indicator/38479) traffic).
+The official source of these quarterly updated data is the Border Service of the Russian Federation (see the data for [incoming](https://fedstat.ru/indicator/38479) and [outgoing](https://fedstat.ru/indicator/38479) traffic).
 
 The dataset contains 40 quarterly observations of the border crossings with Russia with the traffic type additionally split into air, car, rail, ship and walk subsets.
 
