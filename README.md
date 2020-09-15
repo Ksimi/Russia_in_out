@@ -29,6 +29,7 @@ The map and the great circles are **interactive on hover** and show the detailed
 
 The Great Circles dashboard also shows the following data:
 
+
 * Total border crossings + line chart
 * YOY change in border crossings + bar chart
 * RUB/EUR currency exchange rate + line chart
