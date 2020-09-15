@@ -59,4 +59,3 @@ A user can also start an animated sequence of quarterly pie chart views when a â
 **Here is the direct link to the Russian border crossings app on the shinyapp.io:**
 
 https://ksimi.shinyapps.io/Russia_In_Out/
-
