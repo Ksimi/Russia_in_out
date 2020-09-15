@@ -44,7 +44,7 @@ The Mini Pie Chars dashboard menu allows a user to select the following paramete
 * Pie chart mode (total and by transport type with multi-selection possible)
 * Transport type (multi-selection possible)
 * Pie chart sizes
-* Map view as per map provider list for Leaflet
+* Map view with some pre-selected layers from the [map provider list for Leaflet](http://leaflet-extras.github.io/leaflet-providers/preview/index.html)
 * Date in quarterly increments (with the date controls on the map itself)
 
 A user can also start an animated sequence of quarterly pie chart views when a “play” button on the map is clicked.
