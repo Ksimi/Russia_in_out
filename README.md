@@ -20,7 +20,7 @@ _The Great Circles dashboard map based on the idea of the [great-circle distance
 
 The Great Circles dashboard menu allows a user to select the following parameters:
 
-* Type of border crossing (into Russia, into Russia – by population, out of Russia, crossing balance)
+* Type of border crossing (into Russia, into Russia by population, out of Russia, crossing balance)
 * Number of top countries for showing on the map/populating the top countries list
 * Date in quarterly increments
 * Map view with some pre-selected layers from the [map provider list for Leaflet](http://leaflet-extras.github.io/leaflet-providers/preview/index.html)
