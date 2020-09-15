@@ -25,7 +25,7 @@ The Great Circles dashboard menu allows a user to select the following parameter
 * Date in quarterly increments
 * Map view with some pre-selected layers from the [map provider list for Leaflet](http://leaflet-extras.github.io/leaflet-providers/preview/index.html)
 
-The map itself is **interactive on hover** and shows the detailed crossing stats per country.
+The map and the great circles are **interactive on hover** and show the detailed crossing stats per country.
 
 The Great Circles dashboard also shows the following data:
 
@@ -51,6 +51,8 @@ The Mini Pie Chars dashboard menu allows a user to select the following paramete
 * Pie chart sizes
 * Map view with some pre-selected layers from the [map provider list for Leaflet](http://leaflet-extras.github.io/leaflet-providers/preview/index.html)
 * Date in quarterly increments (with the date controls on the map itself)
+
+The mini pie charts on the map are **interactive on click** and show the detailed traffic type stats per country.
 
 A user can also start an animated sequence of quarterly pie chart views when a “play” button on the map is clicked.
 
