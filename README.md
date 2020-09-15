@@ -17,28 +17,34 @@ _The Great Circles dashboard map based on the idea of the [great-circle distance
 
 The Great Circles dashboard menu allows a user to select the following parameters:
 
-..* Type of border crossing (into Russia, into Russia – by population, out of Russia, crossing balance)
-..* Number of top countries for showing on the map/populating the top countries list
-..* Date in quarterly increments
-..* Map view with some pre-selected layers from the map provider list for Leaflet
+* Type of border crossing (into Russia, into Russia – by population, out of Russia, crossing balance)
+* Number of top countries for showing on the map/populating the top countries list
+* Date in quarterly increments
+* Map view with some pre-selected layers from the map provider list for Leaflet
 
+The map itself is **interactive on hover** and shows the detailed crossing stats per country.
 
-The map itself is interactive on hover and shows the detailed crossing stats per country.
 The Great Circles dashboard also shows the following data:
-•	Total border crossings + line chart
-•	YOY change in border crossings + bar chart
-•	RUB/EUR currency exchange rate + line chart
-•	YOY change in FX rate + bar chart
-•	Top countries list
+
+* Total border crossings + line chart
+* YOY change in border crossings + bar chart
+* RUB/EUR currency exchange rate + line chart
+* YOY change in FX rate + bar chart
+* Top countries list
+
 A user can also start an animated sequence of quarterly views when a “play” button on the date selection is clicked.
 
-Mini Pie Charts dashboard
-The Mini Pie Charts dashboard is using the leaflet.minicharts package for showing the pie charts with the traffic type split by country on the World map
+## Mini Pie Charts dashboard
+
+The Mini Pie Charts dashboard is using the leaflet.minicharts package for showing the pie charts with the traffic type split by country on the World map.
+
 The Mini Pie Chars dashboard menu allows a user to select the following parameters:
-•	Type of border crossing (into Russia, out of Russia)
-•	Pie chart mode (total and by transport type with multi-selection possible)
-•	Transport type (multi-selection possible)
-•	Pie chart sizes
-•	Map view as per map provider list for Leaflet
-•	Date in quarterly increments (with the date controls on the map itself)
+
+* Type of border crossing (into Russia, out of Russia)
+* Pie chart mode (total and by transport type with multi-selection possible)
+* Transport type (multi-selection possible)
+* Pie chart sizes
+* Map view as per map provider list for Leaflet
+* Date in quarterly increments (with the date controls on the map itself)
+
 A user can also start an animated sequence of quarterly pie chart views when a “play” button on the map is clicked.
