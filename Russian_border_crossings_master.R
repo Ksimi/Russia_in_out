@@ -319,7 +319,7 @@ Transport <- selectInput("trans",
                          )
 
 Direction_mc <- selectInput("dir_mc",
-                            h5("Select travel direction"),
+                            h5("Select border crossing type"),
                             choices = c("Into Russia", "Out of Russia"),
                             selected = "Into Russia"
                             )
@@ -341,11 +341,11 @@ Size <- sliderInput("size",
 
 Direction <- selectInput(
   "dir",
-  h5("Select direction of travel"),
+  h5("Select border crossing type"),
   choices = c("Into Russia",
               "Into Russia - by populaiton",
               "Out of Russia",
-              "Travel balance"
+              "Crossing balance"
               ),
   selected = "Into Russia"
 )
@@ -355,7 +355,7 @@ Radio_number <- radioButtons(
   "number",
   h5("Select number of countries"),
   choices = c(1,5,10,20,30,50),
-  selected = 20,
+  selected = 10,
   inline = T
 )
 
@@ -373,6 +373,8 @@ Slider_time <- sliderInput(
 
 Provider_list <- c(
   "CartoDB.DarkMatter",
+  "CartoDB.VoyagerNoLabels",
+  "Esri.WorldGrayCanvas",
   "Esri.WorldShadedRelief",
   "Esri.WorldPhysical",
   "NASAGIBS.ViirsEarthAtNight2012",
@@ -425,11 +427,11 @@ Top_list_panel <- box(width = 3,
                       column(
                         width = 12,
                         conditionalPanel(
-                          condition = "input.dir != 'Travel balance'",
+                          condition = "input.dir != 'Crossing balance'",
                           Top_list_header,
                           Top_list_sgl),
                         conditionalPanel(
-                          condition = "input.dir == 'Travel balance'",
+                          condition = "input.dir == 'Crossing balance'",
                           Top_list_header_in,
                           Top_list_pos_in,
                           HTML("<br>"),
@@ -590,7 +592,7 @@ basemap_mc <- leaflet() %>%
               weight = 1,
               opacity = 1,
               fillColor = "white") %>%
-  setView(30, 20, 3)
+  setView(25, 35, 3)
 
 #### Circles UI end ####
 
@@ -662,7 +664,7 @@ server <- function(input, output, session) {
       rename(lon = X, lat = Y)
   })
   
-  # Creating master file for travel balance flow
+  # Creating master file for Crossing balance flow
   Master_sorted <- reactive({
     Master_sorted_geo() %>% 
       st_drop_geometry() %>% 
@@ -774,7 +776,7 @@ server <- function(input, output, session) {
   
   # Composing the text for Total info box
   Info_box_text_total <- reactive({
-    if (input$dir != "Travel balance") {
+    if (input$dir != "Crossing balance") {
       paste0(Texting$Box_total[Texting$Direction == input$dir])
     } else {
       ifelse(
@@ -814,7 +816,7 @@ server <- function(input, output, session) {
     if (Snap_value_cross_YOY() == 0) {
       paste0("")
     } else {
-      if (input$dir != "Travel balance") {
+      if (input$dir != "Crossing balance") {
         paste0(Texting$Box_YOY[Texting$Direction == input$dir])
       } else {
         ifelse(
@@ -1238,20 +1240,20 @@ Box_chart_total <- reactive({
   
   Balance_sign <- reactive ({
     if_else(Master_frame_geo()$Total > 0, 
-            "Travel surplus",
-            "Travel deficit")
+            "Incoming surplus",
+            "Outgoing surplus")
   })
   
   Bal_sign_rus <-reactive ({
     if_else(Master_frame_geo()$Total_Rus > 0, 
-            "travel surplus",
-            "travel deficit")
+            "incoming surplus",
+            "outgoing surplus")
   })
   
   Balance_dir <- reactive ({
-    if (input$dir == "Travel balance")
+    if (input$dir == "Crossing balance")
     {
-      "travel balance"
+      "Crossing balance"
     } else {
       if (input$dir == "Into Russia")
       {
@@ -1267,7 +1269,7 @@ Box_chart_total <- reactive({
   
   # Creating labels for countries' hover-ups
   labels <- reactive({
-    if (input$dir == "Travel balance") {
+    if (input$dir == "Crossing balance") {
       sprintf(
         "Incoming from <strong>%s: </strong> %.1fK<br/>
         Outgoing into <strong>%s: </strong> %.1fK<br/>
@@ -1326,7 +1328,7 @@ Box_chart_total <- reactive({
   
   
   label_rus <- reactive({
-    if (input$dir == "Travel balance") {
+    if (input$dir == "Crossing balance") {
       sprintf(
         "<strong> Russian Federation: </strong> </br> 
         total %s of <br/> 
@@ -1382,9 +1384,17 @@ Box_chart_total <- reactive({
                 ),
                 label = labels(),
                 labelOptions = labelOptions(
-                  style = list("font-weight" = "normal",
-                               padding = "3px 8px"),
-                  textsize = "15px",
+                  style = list(
+                    "border" = 0,
+                    "font-weight" = "lighter",
+                    "color" = "#ffffff",
+                    "background-color" = "#40367c",
+                    "line-height" = "14px",
+                    padding = "5px 5px"
+                  ),
+                  # style = list("font-weight" = "normal",
+                  #              padding = "3px 8px"),
+                  textsize = "14px",
                   direction = "auto"
                 )
     )
