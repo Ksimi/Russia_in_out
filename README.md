@@ -1,4 +1,4 @@
-# Border crossings with Russian Federation 
+# Border crossings with the Russian Federation 
 **["Russia_in_out"](
 https://ksimi.shinyapps.io/Russia_In_Out/)** is the Shiny app based on the dataset of the border crossings with Russia for the period of **2010 through 2019**.
 
