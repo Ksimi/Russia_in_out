@@ -12,7 +12,7 @@ The app utilizes the power of the **[Shinydashboard](http://rstudio.github.io/sh
 
 ![alt text](https://github.com/Ksimi/Russia_in_out/blob/master/Russia_in_out_screenshot.png)
 
-The map of the dashboard is based on the idea of the [great-circle distances](https://en.wikipedia.org/wiki/Great-circle_distance) and is showing the border crossings with Russia as the great-circle sections* on the World map utilizing the [Leaflet](https://leafletjs.com/) library.
+The lines on the dashboard map are built as the [great-circle distance sections](https://en.wikipedia.org/wiki/Great-circle_distance) and are showing the border crossings with Russia as the great-circle sections* on the World map utilizing the [Leaflet](https://leafletjs.com/) library.
 
 ###### _*The starting (for outgoing) or ending (for incoming) points for the great-circle sections are placed in the Russian capital, Moscow. This geographical simplification was made due to the facts that: a) No regional split of the Russian border crossings is openly available yet (as of Sep 2020); b) On average more than 50% of all incoming/outgoing air traffic finishes in/originates from Moscow._
 
