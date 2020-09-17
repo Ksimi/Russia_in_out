@@ -8,7 +8,7 @@ The dataset contains 40 quarterly observations of the border crossings with Russ
 
 The app code is written in **[R](https://www.r-project.org/about.html)** using the **[Shiny](https://shiny.rstudio.com/)** package with some CSS fine-tuning.
 
-The app utilizes the power of the **[Shinydashboard](http://rstudio.github.io/shinydashboard/index.html)** and is organized into **two different dashboard types**:
+The app utilizes the power of the **[Shinydashboard](http://rstudio.github.io/shinydashboard/index.html)**.
 
 ## **Great Circles dashboard**
 
@@ -36,25 +36,6 @@ The Great Circles dashboard also shows the following data:
 * Top countries list
 
 A user can also start an animated sequence of quarterly views when a “play” button on the date selection is clicked.
-
-## Mini Pie Charts dashboard
-
-![alt text](https://github.com/Ksimi/Russia_in_out/blob/master/data-raw/mini_chart.png)
-
-The Mini Pie Charts dashboard is using the [leaflet.minicharts](https://cran.r-project.org/web/packages/leaflet.minicharts/vignettes/introduction.html) package for showing the pie charts with the traffic type split by country on the World map.
-
-The Mini Pie Chars dashboard menu allows a user to select the following parameters:
-
-* Type of border crossing (into Russia, out of Russia)
-* Pie chart mode (total and by transport type with multi-selection possible)
-* Transport type (multi-selection possible)
-* Pie chart sizes
-* Map view with some pre-selected layers from the [map provider list for Leaflet](http://leaflet-extras.github.io/leaflet-providers/preview/index.html)
-* Date in quarterly increments (with the date controls on the map itself)
-
-The mini pie charts on the map are **interactive on click** and show the detailed traffic type stats per country.
-
-A user can also start an animated sequence of quarterly pie chart views when a “play” button on the map is clicked.
 
 **Here is the direct link to the Russian border crossings app on the shinyapp.io:**
 
