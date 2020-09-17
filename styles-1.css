@@ -42,6 +42,10 @@ body, label, input, button, select, box, .h1, .h2, .h3, .h4, .h5, h1, h2, h3, h4
   color: rgb(128,177,221);
 }
 
+.selectize-control {
+    margin-bottom: 0px;
+}
+
 /* Rounding the edges of the graphbox */
 img {
     border-radius: 10px;
@@ -135,7 +139,7 @@ border-radius: 30px;
 }
 
 .h4, .h5, .h6, h4, h5, h6 {
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 5px;
 }
 
