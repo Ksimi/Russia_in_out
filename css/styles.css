@@ -5,7 +5,8 @@ https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
 #343434 - dark gray - almost black
 #2F3061 - blue dark
 #FFE66D - yellow
-#A1C6D7 - blue light
+#A1C6D7 - blue ligh
+#696969 - middle gray background
 */
 
 
@@ -79,7 +80,7 @@ header {
 /* Projects
 ------------------------------------*/
 .projects {
-  background: #F7FFF7;
+  background: #FFEFD5;
 }
 .projects a {
   color: #2F3061;
@@ -176,7 +177,7 @@ footer {
 /* Gallery styles
 ------------------------------------*/
 div.gallery {
-  opacity: 0.6;
+  opacity: 1.0;
   margin: 5px;
   /* border: 1px solid #ccc; */
   float: left;
@@ -184,7 +185,7 @@ div.gallery {
 }
 
 div.gallery:hover {
-  opacity: 1.0;
+  opacity: 0.7;
 }
 
 div.gallery img {
