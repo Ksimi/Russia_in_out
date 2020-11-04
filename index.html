@@ -1,31 +1,211 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-<style>
-body {
-  background-color: aquamarine;
-}
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+      <title>Maxim Kobzev, Data Visualizer and Dashboard Creator</title>
+      <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/styles.css">
+  </head>
 
-h1, h2, p {
-  font-family: Segoe UI;
-  color: DarkCyan;
-  text-align: center;
-}
+  <body>
+    <main>
+      <!-- ***************  ABOUT / PROFILE  **************** -->
+      <header>
+        <div class="content-wrap">
+          <h1>Maxim Kobzev</h1>
+          <h2>Data Visualizer and Dashboard Creator</h2>
 
-p {
-  font-size: 20px;
-}
-</style>
-</head>
-<body>
-  
-<h1>Maxim Kobzev</h1>
-<h2>My portfolio of Shiny apps:</h2>
-<p><a href="https://ksimi.shinyapps.io/WDI_map_app/">World Development Indicators on a choropleth map</a></p>
-<p><a href="https://ksimi.shinyapps.io/WDI_all_in_one/">World Development Indicators – full info on one screen</a></p>
-<p><a href="https://ksimi.shinyapps.io/Russia_In_Out/">Border crossings with Russian Federation (2010 - 2019) ver 1.0 (with great circles)</a></p>
-<p><a href="https://ksimi.shinyapps.io/Russian_border_crossings/">Border crossings with Russian Federation (2010 - 2020) ver 2.0 (sleek design)</a></p>
+          <p>As a dashboard developer, I specialize in creating dashboards in R Shny, Excel, Qlik Sense an Tableau.</p>
+        </div>
+      </header>
 
-</body>
+      <!-- ************ PROJECTS / PORTFOLIO  ************** -->
+      <section class="projects">
+        <div class="content-wrap divider">
+          <h2>Featured Projects</h2>
+          <p>View selected projects below.</p>
+
+          <!-- Project 1 -->
+          <section class="project-item">
+            <img src="images/RBC-sleek-Balance.jpg" alt="Russian border crossings dashboard">
+            <h3>Russian border crossings dashboard</h3>
+            <p>A Shiny Dashboard app showing the border crossings with Russian Federation for the decade of 2010 through 2020.</p>
+            <a class="btn" href="https://ksimi.shinyapps.io/Russian_border_crossings/" target="_blank">Start the app</a>
+            <!-- <a class="btn" href="https://www.lynda.com/Christina-Truong/7842227-1.html">Lynda.com</a> -->
+          </section>
+
+          <!-- Project 2 -->
+          <section class="project-item">
+            <img src="images/WDI-all-in-one.jpg" alt="WDI dashboard">
+            <h3>World Development Indicators dashboard</h3>
+            <p>A comprehensive Shiny Dashboard app dedicated to the World Development Indicators, featuring the full World Bank database with maximum level of details.</p>
+            <a class="btn" href="https://ksimi.shinyapps.io/WDI_all_in_one/" target="_blank">Start the app</a>
+          </section>
+
+          <!-- Project 3 -->
+          <section class="project-item">
+            <img src="images/WDI-scaled-map.jpg" alt="WDI dashboard">
+            <h3>World Development Indicators on a full-screen map</h3>
+            <p>A simple Shiny Dashboard app showing the World Development Indicatorson a full-screen Leaflet map.</p>
+            <a class="btn" href="https://ksimi.shinyapps.io/WDI_map_app/" target="_blank">Start the app</a>
+          </section>
+
+          <!-- Project 4 -->
+          <section class="project-item">
+            <!-- <img src="images/Qlik map & gauge.png" alt="WDI dashboard"> -->
+            <h3>A selection of Qlik Sense dashboard features</h3>
+            <p>Click on an image to zoom in</p>
+            <div class="gallery">
+              <a target="_blank" href="images/Qlik map & gauge.png">
+                <img src="images/Qlik map & gauge.png" alt="Qlik map" width="700" height="500">
+              </a>
+              <div class="desc">Qlik map & gauge</div>
+            </div>
+            <div class="gallery">
+              <a target="_blank" href="images/Qlik area charts.png">
+                <img src="images/Qlik area charts.png" alt="Qlik area chart" width="700" height="500">
+              </a>
+              <div class="desc">Qlik area chart</div>
+            </div>
+            <div class="gallery">
+              <a target="_blank" href="images/Qlik treemap.png">
+                <img src="images/Qlik treemap.png" alt="Qlik pie charts" width="700" height="500">
+              </a>
+              <div class="desc">Qlik treemap</div>
+            </div>
+          </section>
+
+          <!-- Project 5 -->
+          <section class="project-item">
+            <!-- <img src="images/Qlik map & gauge.png" alt="WDI dashboard"> -->
+            <h3>A selection of Tableau dashboard features</h3>
+            <p>Click on an image to zoom in</p>
+            <div class="gallery">
+              <a target="_blank" href="images/Tableau Russia incoming bubbles by transport.png">
+                <img src="images/Tableau Russia incoming bubbles by transport.png" alt="Tableau bubbles" width="700" height="500">
+              </a>
+              <div class="desc">Tableau bubble chart</div>
+            </div>
+            <div class="gallery">
+              <a target="_blank" href="images/Tableau area by trans.png">
+                <img src="images/Tableau area by trans.png" alt="Tableau area chart" width="700" height="500">
+              </a>
+              <div class="desc">Tableau area chart</div>
+            </div>
+          </section>
+
+        </div>
+      </section>
+
+      <!-- ***********************  WORK EXPERIENCE  *********************** -->
+      <section class = "work-experience">
+      <div class="content-wrap item-details divider">
+            <h2>Work Experience</h2>
+
+            <!-- Job 1 -->
+            <section class="job-item">
+              <div class="job-details">
+                <h3>Data Scientist / Data Wrangler / Data Visualizer (changing the career path)</h3>
+                <p>Freelance</p>
+                <p>Dec 2019 - current</p>
+              </div>
+              <div class="job-summary">
+                <ul>
+                  <li>Top 5% Excel user (LinkedIn assessment, out of 6.2M participants)</li>
+                  <li>Top 15% R user (LinkedIn assessment, out of 221k participants)</li>
+                  <li>Top 15% CSS user (LinkedIn assessment, out of 635k participants)</li>
+                  <li>4 apps created from scratch in R Shiny Dashboard</li>
+                  <li>20+ ongoing projects of visualizations in R, Shiny, htmlwidgets, Qlik Sense, Python and D3.js</li>
+                  <li>20+ courses taken on R, Shiny, Python, D3.js, Tableau, Qlik Sense, SQL, JavaScript and HTML/CSS </li>
+                  <li>20+ course certificates earned on LinkedIn, edX and DataCamp</li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- Job 2 -->
+            <section class="job-item">
+              <div class="job-details">
+                <h3>Market Manager / Report Developer</h3>
+                <p>Expedia Group</p>
+                <p>Jan 2008 - Nov 2019</p>
+              </div>
+              <div class="job-summary">
+                <ul>
+                  <li>150+ reports & visualizations created in Excel, Tableau & PowerPoint</li>
+                  <li>300+ colleagues helped with increasing the productivity and achieving the KPIs </li>
+                  <li>50+ coaching sessions provided for colleagues in EMEA, APAC and Americas</li>
+                  <li>20+ Expedia market summits prepared and conducted in Russia, Ukraine, Romania and Bulgaria</li>
+                  <li>10+ key note speeches held at the trade fairs and hotel forums in Germany, Russia and Ukraine</li>
+                  <li>20+ webinars for hotel partners provided in 7 countries across Eastern Europe</li>
+                </ul>
+            </div>
+            </section>
+
+            <!-- Job 3 -->
+            <section class="job-item">
+              <div class="job-details">
+                <h3>Sales and Marketing Strategy Consultant</h3>
+                <p>Zumtobel Lighting GmbH</p>
+                <p>Jul 2006 - Sep 2006</p>
+              </div>
+            </section>
+
+            <!-- Job 4 -->
+            <section class="job-item">
+              <div class="job-details">
+                <h3>Head of Sales Division / Report Developer</h3>
+                <p>Axima Ltd.</p>
+                <p>Jan 2001 - Sep 2005</p>
+              </div>
+            </section>
+
+            <!-- End of Job block. -->
+        </div>
+      </section>
+
+      <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
+      <section class="education">
+        <div class="content-wrap item-details">
+          <h2>Education</h2>
+
+          <!-- Copy this whole <section> block to add more schools. -->
+          <section>
+            <h3>LinkedIn, edX, DataCamp, W3Schools</h3>
+            <p>20+ courses on R, Shiny, HTML, CSS, JavaScript, D3.js, SQL etc.</p>
+            <p>2019 - current</p>
+          </section>
+
+          <section>
+            <h3>University of St. Gallen, Switzerland</h3>
+            <p>MBA, General Management</p>
+            <p>2006</p>
+          </section>
+
+          <section>
+            <h3>Moscow State University, Russia</h3>
+            <p>Master of Sciences, Physics</p>
+            <p>1987 - 1993</p>
+          </section>
+
+          <!-- End of School block. -->
+          </div>
+      </section>
+
+      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+      <footer>
+        <div class="content-wrap">
+          <h2>Let's Keep in Touch!</h2>
+
+          <!-- Social media and contact links. Add or remove any networks. -->
+          <ul class="contact-list">
+            <li><a href="mailto:maxim.kobzev@gmail.com">maxim.kobzev@gmail.com</a></li>
+            <li><a href="http://maximkobzev.com" target="_blank">maximkobzev.com</a></li>
+            <li><a href="#" target="_blank">LinkedIn</a></li>
+            <li><a href="#" target="_blank">GitHub</a></li>
+          </ul>
+          </div>
+      </footer>
+    </main>
+  </body>
 </html>
