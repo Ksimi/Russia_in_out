@@ -3,10 +3,14 @@ COLOR PALETTE
 https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
 #F7FFF7 - almost white
 #343434 - dark gray - almost black
-#2F3061 - blue dark
+#0d7198 - blue dark
+#0d7198 - deep blue-green
 #FFE66D - yellow
 #A1C6D7 - blue ligh
-#696969 - middle gray background
+#FFEFD5 - light beige (papayawhip)
+#9f270e - rich red
+#8FBC8F - dark sea green
+#EEE8AA - PaleGoldenRod
 */
 
 
@@ -23,7 +27,7 @@ body {
   color: #343434;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 15px;
   line-height: 1.5;
 }
@@ -74,7 +78,7 @@ margin: 0;
 /* Profile
 ------------------------------------*/
 header {
-  background: #2F3061;
+  background: #0d7198;
   color: #F7FFF7;
 }
 /* Projects
@@ -83,11 +87,11 @@ header {
   background: #FFEFD5;
 }
 .projects a {
-  color: #2F3061;
+  color: #0d7198;
 }
 .projects .btn {
   color: #F7FFF7;
-  background: #2F3061;
+  background: #0d7198;
   text-decoration: none;
   padding: 8px;
   border-radius: 4px;
@@ -112,13 +116,20 @@ header {
 /* Education
 ------------------------------------*/
 .education {
-  background-image: url(../images/sharon-mccutcheon-unsplash.jpg);
+  /* background-image: url(../images/sharon-mccutcheon-unsplash.jpg); */
   background-size: cover;
   background-position: top right;
-  padding-bottom: 100px;
 }
 .education p {
   width: 60%;
+}
+
+/* Accomplishments
+------------------------------------*/
+.accomplishments {
+  background: #EEE8AA;
+
+  /*padding-bottom: 100px;*/
 }
 
 /* Contact Info
