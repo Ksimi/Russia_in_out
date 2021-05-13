@@ -1,0 +1,218 @@
+/*
+COLOR PALETTE
+https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
+#F7FFF7 - almost white
+#343434 - dark gray - almost black
+#0d7198 - blue dark
+#0d7198 - deep blue-green
+#FFE66D - yellow
+#A1C6D7 - blue ligh
+#FFEFD5 - light beige (papayawhip)
+#9f270e - rich red
+#8FBC8F - dark sea green
+#EEE8AA - PaleGoldenRod
+*/
+
+
+/* Global styles
+------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  /* font-family: "Segoe UI"; */
+  color: #343434;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+img {
+  width: 300px;
+}
+a {
+  color: #FFE66D;
+}
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  font-size: 100px;
+}
+h2 {
+  font-size: 45px;
+  line-height: 1;
+}
+h1, h2 {
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+  margin: 0;
+}
+.content-wrap {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+h3 {
+  margin-bottom: 0;
+}
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+margin: 0;
+}
+.divider > section {
+  border-bottom: 1px dashed #343434;
+  padding: 25px 0;
+}
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+
+/* Profile
+------------------------------------*/
+header {
+  background: #0d7198;
+  color: #F7FFF7;
+}
+/* Projects
+------------------------------------*/
+.projects {
+  background: #FFEFD5;
+}
+.projects a {
+  color: #0d7198;
+}
+.projects .btn {
+  color: #F7FFF7;
+  background: #0d7198;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+.projects .btn:hover {
+  background: rgba(47, 48, 97, 80%);
+}
+.project-item {
+  overflow: hidden;
+}
+
+.project-item h3 {
+  margin-top: 0;
+}
+/* Work Experience
+------------------------------------*/
+.work-experience {
+  background: #A1C6D7;
+}
+
+/* Education
+------------------------------------*/
+.education {
+  /* background-image: url(../images/sharon-mccutcheon-unsplash.jpg); */
+  background-size: cover;
+  background-position: top right;
+}
+.education p {
+  width: 60%;
+}
+
+/* Accomplishments
+------------------------------------*/
+.accomplishments {
+  background: #EEE8AA;
+
+  padding-bottom: 0;
+}
+
+/* Certificates
+------------------------------------*/
+.certificates {
+  background: #EEE8AA;
+
+  padding-bottom: 150px;
+}
+
+/* Contact Info
+------------------------------------*/
+footer {
+  background: #343434;
+  color: #F7FFF7;
+}
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+.contact-list a {
+  padding: 20px;
+  display: inline-block;
+}
+
+/* Responsive design
+------------------------------------*/
+@media screen and (min-width: 750px) {
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 20px;
+  }
+  header, footer {
+    text-align: center;
+    }
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  h1 {
+    font-size: 70px;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h2 {
+    line-height: 0.8;
+  }
+  .contact-list a {
+    padding: 5px;
+  }
+}
+
+/* Gallery styles
+------------------------------------*/
+div.gallery {
+  opacity: 1.0;
+  margin: 5px;
+  /* border: 1px solid #ccc; */
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  opacity: 0.7;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
