@@ -129,7 +129,15 @@ header {
 .accomplishments {
   background: #EEE8AA;
 
-  /*padding-bottom: 100px;*/
+  padding-bottom: 0;
+}
+
+/* Certificates
+------------------------------------*/
+.certificates {
+  background: #EEE8AA;
+
+  padding-bottom: 150px;
 }
 
 /* Contact Info
